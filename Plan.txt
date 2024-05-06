@@ -1,8 +1,85 @@
 Menu :
 - Dashboard
+- Absensi
 - Pegawai
 - Divisi
 - Jabatan
-- Absensi
-- Penggajian
-- Pengaturan
+- Jadwal Shift
+
+
+
+Database
+
+# Jabatan
+    - id
+    - nama_jabatan
+    - status
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Divisi 
+    - id
+    - nama_divisi
+    - id_jabatan
+    - status
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Pegawai
+    - id
+    - nama_pegawai
+    - tempat_lahir
+    - tanggal_lahir
+    - id_provinsi
+    - id_kabupaten
+    - id_kecamatan
+    - alamat (kelurahan, RT ,RW ,Jl ,GG) 
+    - nomor_hp
+    - id_agama
+    - id_divisi
+    - id_jabatan
+    - status
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Pegawai Detail
+    - id
+    - id_pegawai
+    - status_perkawinan 
+        0 = Belum menikah
+        1 = Menikah
+        2 = Cerai 
+        3 = Cerai Mati
+    - file_ktp
+    - file_kk
+
+# Agama 
+    - id
+    - nama_agama
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Provinsi
+    - id
+    - provinsi
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Kabupaten
+    - id
+    - provinsi
+    - created_at
+    - updated_at
+    - deleted_at
+
+# Kecamatan
+    - id
+    - provinsi
+    - created_at
+    - updated_at
+    - deleted_at
