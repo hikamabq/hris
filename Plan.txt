@@ -27,7 +27,7 @@ Database
     - updated_at
     - deleted_at
 
-# Pegawai
+# Pegawai ---
     - id
     - nama_pegawai
     - tempat_lahir
@@ -45,7 +45,7 @@ Database
     - updated_at
     - deleted_at
 
-# Pegawai Detail
+# Pegawai Detail ---
     - id
     - id_pegawai
     - status_perkawinan 
@@ -56,14 +56,14 @@ Database
     - file_ktp
     - file_kk
 
-# Agama 
+# Agama ---
     - id
     - nama_agama
     - created_at
     - updated_at
     - deleted_at
 
-# Provinsi
+# Provinsi ---
     - id
     - provinsi
     - created_at
