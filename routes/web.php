@@ -3,6 +3,9 @@
 use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\AbsensiController;
+use App\Http\Controllers\JadwalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +30,9 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::resource('jabatan', JabatanController::class);
     Route::resource('divisi', DivisiController::class);
+    Route::resource('pegawai', PegawaiController::class);
+    Route::resource('absensi', AbsensiController::class);
+    Route::resource('jadwal', JadwalController::class);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

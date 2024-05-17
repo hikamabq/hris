@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DivisiController extends Controller
+class PegawaiController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('divisi.index');
+        return view('pegawai.index');
     }
 
     /**
@@ -43,7 +43,7 @@ class DivisiController extends Controller
      */
     public function edit(string $id)
     {
-        
+        //
     }
 
     /**

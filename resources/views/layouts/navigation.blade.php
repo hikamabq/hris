@@ -15,10 +15,10 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         <div class="text-white">{{ __('Dashboard') }}</div>
                     </x-nav-link>
-                    <x-nav-link>
+                    <x-nav-link :href="route('absensi.index')" :active="request()->routeIs('absensi.index')">
                         <div class="text-white">{{ __('Absensi') }}</div>
                     </x-nav-link>
-                    <x-nav-link>
+                    <x-nav-link :href="route('pegawai.index')" :active="request()->routeIs('pegawai.index')">
                         <div class="text-white">{{ __('Pegawai') }}</div>
                     </x-nav-link>
                     <x-nav-link :href="route('divisi.index')" :active="request()->routeIs('divisi.index')">
@@ -27,8 +27,8 @@
                     <x-nav-link :href="route('jabatan.index')" :active="request()->routeIs('jabatan.index')">
                         <div class="text-white">{{ __('Jabatan') }}</div>
                     </x-nav-link>
-                    <x-nav-link>
-                        <div class="text-white">{{ __('Jadwal Shift') }}</div>
+                    <x-nav-link :href="route('jadwal.index')" :active="request()->routeIs('jadwal.index')">
+                        <div class="text-white">{{ __('Jadwal') }}</div>
                     </x-nav-link>
                 </div>
             </div>
